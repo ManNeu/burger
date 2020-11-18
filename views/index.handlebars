@@ -3,8 +3,8 @@
 <h2>Bugers devour!</h2>
 
 <ul>
-    {{#each bugerss}}
-    {{#unless devour}}
+    {{#each bugers}}
+    {{#unless devoured}}
     {{>burgers/burger-block devour=true}}
 
     {{/unless}}
@@ -13,13 +13,13 @@
 
 <h2>burgers devour!</h2>
 
-<ul>
+{{!-- <ul>
     {{#each burgers}}
     {{#if devour}}
     {{> burgers/burger-block devour=false}}
     {{/if}}
     {{/each}}
-</ul>
+</ul> --}}
 
 <h2>Add a burger</h2>
 <form class="create-form">
