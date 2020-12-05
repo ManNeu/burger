@@ -30,8 +30,7 @@ function objToSql(ob) {
             if (typeof value === "string" && value.indexOf(" ") >= 0) {
                 value = "'" + value + "'";
             }
-            // e.g. {name: 'Lana Del Grey'} => ["name='Lana Del Grey'"]
-            // e.g. {sleepy: true} => ["sleepy=true"]
+
             arr.push(key + "=" + value);
         }
     }
@@ -89,6 +88,20 @@ var orm = {
             cb(result);
         });
     },
+    deleteOne: function (table, condition, cb) {
+        var queryString = "DELETE FROM " + table;
+        queryString += " WHERE ";
+        queryString += condition;
+
+        connection.query(queryString, function (err, result) {
+            if (err) {
+                throw err;
+            }
+
+            cb(result);
+        });
+    }
+
 
 };
 

@@ -24,11 +24,11 @@ run 'npm start' to run the app.
 (https://github.com/ManNeu/burger)
 
 # Contact
-Manish Neupane
-email: mrnish.are@gmail.com
+Manish Neupane <br>
+email: mrnish.are@gmail.com <br>
 phone: 0416508908
 
 # Acknowledgments
-Instructor
-Teaching assistant 
+Instructor <br>
+Teaching assistant <br>
 classmates

@@ -4,11 +4,11 @@ CREATE DATABASE burgers_db;
 USE burgers_db;
 CREATE TABLE burgers
 (
-    id INT
+    id INT NOT NULL
     AUTO_INCREMENT,
     burger_name VARCHAR
     (200),
-    devoured BOOLEAN,
+    devoured BOOLEAN DEFAULT FALSE,
     PRIMARY KEY
     (id)
 
